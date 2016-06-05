@@ -1,8 +1,56 @@
-//alert(Math.floor(Math.random() * 6) + 1);
-var t = new AVLTree();
-var a = t.insert(1, 'hello');
-var b = t.insert(2, 'world');
-t.search(1); // returns a
-console.log(t.search(3)); // returns b, the last leaf visited while searching for 3
-console.log(dicewareWords);
-console.log(dicewareWords["11111"]);
+var wordTree = new AVLTree();
+
+for (word in dicewareWords) {
+    wordTree.insert(word, dicewareWords[word]);
+}
+
+var diceResult = "";
+var phrase = "";
+
+for(i = 0; i<5; i++) {
+    diceResult += (Math.floor(Math.random() * 6) + 1).toString();
+}
+
+phrase += wordTree.search(diceResult).value + " ";
+
+diceResult = "";
+
+for(i = 0; i<5; i++) {
+    diceResult += (Math.floor(Math.random() * 6) + 1).toString();
+}
+
+phrase += wordTree.search(diceResult).value + " ";
+
+diceResult = "";
+
+for(i = 0; i<5; i++) {
+    diceResult += (Math.floor(Math.random() * 6) + 1).toString();
+}
+
+phrase += wordTree.search(diceResult).value + " ";
+
+diceResult = "";
+
+for(i = 0; i<5; i++) {
+    diceResult += (Math.floor(Math.random() * 6) + 1).toString();
+}
+
+phrase += wordTree.search(diceResult).value + " ";
+
+diceResult = "";
+
+for(i = 0; i<5; i++) {
+    diceResult += (Math.floor(Math.random() * 6) + 1).toString();
+}
+
+phrase += wordTree.search(diceResult).value + " ";
+
+diceResult = "";
+
+for(i = 0; i<5; i++) {
+    diceResult += (Math.floor(Math.random() * 6) + 1).toString();
+}
+
+phrase += wordTree.search(diceResult).value + " ";
+
+console.log(phrase);
