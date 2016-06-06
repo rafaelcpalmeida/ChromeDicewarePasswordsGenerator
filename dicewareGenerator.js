@@ -6,7 +6,9 @@ var DicewareGenerator = function() {
 
 DicewareGenerator.prototype.buildTree = function() {
     for (var word in dicewareWords) {
-        wordTree.insert(word, dicewareWords[word]);
+        if ({}.hasOwnProperty.call(dicewareWords, word)) {
+            wordTree.insert(word, dicewareWords[word]);
+        }
     }
 };
 
@@ -15,7 +17,7 @@ DicewareGenerator.prototype.getRandomNumber = function() {
 };
 
 DicewareGenerator.prototype.getPhrase = function(numberOfWords, separator) {
-    var phrase = "";
+    var phrase = "", j, i;
 
     for (j = 0; j < numberOfWords; j++) {
         var diceResult = "";
