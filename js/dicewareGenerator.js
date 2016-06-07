@@ -26,7 +26,9 @@ DicewareGenerator.prototype.getPhrase = function(numberOfWords, separator) {
     var numbers = Array.apply(null, Array(numberOfWords));
 
     for (var nmb in numbers) {
-        numbers[nmb] = this.getRandomWord(this.getRandomNumbers().join(""));
+        if ({}.hasOwnProperty.call(numbers, nmb)) {
+            numbers[nmb] = this.getRandomWord(this.getRandomNumbers().join(""));
+        }
     }
 
     return numbers.join(separator);
