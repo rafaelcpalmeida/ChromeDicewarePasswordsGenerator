@@ -16,6 +16,16 @@ This plugin uses Vanilla JS and an implementation of the AVL tree (thanks to [Ra
 
 There's no way to know which password you generated but if you're paranoid you can disconnect from the Internet and the extension will work the same way.
 
+# FAQS
+- What's the objective of this extension?
+    - This extension uses the diceware method to generate secure passwords / passphrases. I build it just for fun but it can be used in real life applications such as generating your password manager vault password.
+- Is it meant to replace password managers?
+    - No way!
+- Is it safe?
+    - Absolutely! Everything is done inside your browser. You can even use it offline.
+- Why is the default number of words 8?
+    - According to diceware method creator: **"Eight words should be completely secure through 2050."** 
+
 # Thanks to
 - [Freepik] for the beautiful icon
 - [Raoul Harel] for the AVL implementation
