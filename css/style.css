@@ -1,0 +1,30 @@
+html,
+body {
+    width: 400px;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
+
+#formHolder {
+    width: 95%;
+    height: 100%;
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+#passwordHolder {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: vertical;
+}
