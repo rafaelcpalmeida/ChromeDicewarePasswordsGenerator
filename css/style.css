@@ -1,7 +1,7 @@
 html,
 body {
     width: 400px;
-    height: 300px;
+    height: 350px;
     padding: 0;
     margin: 0;
 }
@@ -12,8 +12,13 @@ body {
     margin: 10px;
 }
 
+fieldset {
+    border: none;
+}
+
 input {
     width: 100%;
+    margin-top: 10px;
 }
 
 #passwordHolder {
