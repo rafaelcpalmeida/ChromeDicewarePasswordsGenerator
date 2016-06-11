@@ -1,4 +1,5 @@
-var dicewareGen = new DicewareGenerator();
+var dicewareGen = Object.create( DicewareGenerator );
+dicewareGen.constructor( dicewareWords );
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.type === "password") {
