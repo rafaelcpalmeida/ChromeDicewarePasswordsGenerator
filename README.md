@@ -6,6 +6,8 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/cfepfnclehmojjhijpfjapgmcldbjgbj.svg?maxAge=7200)]()
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/d/cfepfnclehmojjhijpfjapgmcldbjgbj.svg?maxAge=7200)]()
 
+[![Buy Me a Coffee at ko-fi.com](https://az743702.vo.msecnd.net/cdn/kofi1.png?v=f)](https://ko-fi.com/A606KD0)
+
 This is a small Google Chrome extension that allows you to generate strong and secure passwords using the well known Diceware algorithm.
 
 # Instructions
