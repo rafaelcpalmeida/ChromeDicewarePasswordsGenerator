@@ -5,9 +5,9 @@ var DicewareGenerator = function() {
 };
 
 DicewareGenerator.prototype.buildTree = function() {
-    for (var word in dicewareWords) {
-        if ({}.hasOwnProperty.call(dicewareWords, word)) {
-            wordTree.insert(word, dicewareWords[word]);
+    for (var word in effWords) {
+        if ({}.hasOwnProperty.call(effWords, word)) {
+            wordTree.insert(word, effWords[word]);
         }
     }
 };
