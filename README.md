@@ -11,10 +11,13 @@
 This is a small Google Chrome extension that allows you to generate strong and secure passwords using the well known Diceware algorithm.
 
 # Instructions
-Just enter the number of words you want and the separator (if any!) and press that button. It will generate you a brand new password.
+Just enter the number of words you want and the separator (if any!) and press the green button. It will generate you a brand new password.
+
+### Optional
+You can choose the [EFF] word list or the original Diceware, by [Arnold Reinhold]. The default is the [EFF] one.
 
 # Geek stuff
-This plugin uses Vanilla JS and an implementation of the AVL tree (thanks to [Raoul Harel]) in order to quickly iterate over the [list] of words.
+This plugin uses Vanilla JS. In other words: no third party libraries are being used.
 
 There's no way to know which password you generated but if you're paranoid you can disconnect from the Internet and the extension will work the same way.
 
@@ -30,8 +33,8 @@ There's no way to know which password you generated but if you're paranoid you c
 
 # Thanks to
 - [Freepik] for the beautiful icon
-- [Raoul Harel] for the AVL implementation
 - [rjosborne] for PR including the EFF words list
+- [Arnold Reinhold] for the diceware algorithm
 
 # License
 
@@ -48,3 +51,4 @@ MIT
    [Freepik]: <http://www.flaticon.com/authors/freepik>
    [Arnold Reinhold]: <http://world.std.com/~reinhold/diceware.html>
    [rjosborne]: <https://github.com/rjosborne>
+   [EFF]: <https://www.eff.org//dice>
