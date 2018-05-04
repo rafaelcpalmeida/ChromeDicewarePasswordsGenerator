@@ -1,16 +1,4 @@
-var wordTree = new AVLTree();
-
-var DicewareGenerator = function() {
-    this.buildTree(wordTree);
-};
-
-DicewareGenerator.prototype.buildTree = function() {
-    for (var word in effWords) {
-        if ({}.hasOwnProperty.call(effWords, word)) {
-            wordTree.insert(word, effWords[word]);
-        }
-    }
-};
+var DicewareGenerator = function() { };
 
 DicewareGenerator.prototype.getRandomNumbers = function() {
     return Array.apply(null, Array(5)).map(function(x) {
@@ -18,16 +6,18 @@ DicewareGenerator.prototype.getRandomNumbers = function() {
     });
 };
 
-DicewareGenerator.prototype.getRandomWord = function(wordIndex) {
-    return wordTree.search(wordIndex).value;
-};
-
-DicewareGenerator.prototype.getPhrase = function(numberOfWords, separator) {
+DicewareGenerator.prototype.getPhrase = function(numberOfWords, separator, useDicewareWords) {
     var numbers = Array.apply(null, Array(numberOfWords));
+
+    console.log(useDicewareWords);
 
     for (var nmb in numbers) {
         if ({}.hasOwnProperty.call(numbers, nmb)) {
-            numbers[nmb] = this.getRandomWord(this.getRandomNumbers().join(""));
+            if(useDicewareWords) {
+                numbers[nmb] = dicewareWords[this.getRandomNumbers().join("")];
+            } else {
+                numbers[nmb] = effWords[this.getRandomNumbers().join("")];
+            }
         }
     }
 

@@ -31,7 +31,7 @@ There's no way to know which password you generated but if you're paranoid you c
 # Thanks to
 - [Freepik] for the beautiful icon
 - [Raoul Harel] for the AVL implementation
-- [Arnold Reinhold] for the diceware algorithm
+- [rjosborne] for PR including the EFF words list
 
 # License
 
@@ -44,7 +44,7 @@ MIT
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
-   [Raoul Harel]: <https://github.com/rharel/node-avl-tree/>
    [list]: <http://world.std.com/~reinhold/diceware.wordlist.asc>
    [Freepik]: <http://www.flaticon.com/authors/freepik>
    [Arnold Reinhold]: <http://world.std.com/~reinhold/diceware.html>
+   [rjosborne]: <https://github.com/rjosborne>
