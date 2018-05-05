@@ -2,9 +2,9 @@ html,
 body {
     width: 400px;
     height: 475px;
-    background-color: #f2f2f2;
+    background-color: #242424;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: rgb(136, 136, 136);
 }
 
 #formHolder {
@@ -17,19 +17,22 @@ input {
     margin: 10px 0;
     box-sizing: border-box;
     border-radius: 4px;
-    border: none;
+    border-color: #1d1d1d;
+    border-width: 1px;
+    border-style: solid;
     padding: 14px;
-    background-color: white;
-    color: black;
+    background-color: #242424;
+    color: rgb(136, 136, 136);
 }
 input[type=button] {
-    color: white;
+    color: rgb(136, 136, 136);
     text-transform: uppercase;
-    background-color: #4CAF50;
+    background-color: #4a5157;
 }
 
 input[type=button]:hover {
-    background-color: #45a049;
+    background-color: #003333;
+    color: rgb(219, 219, 219);
 }
 
 #passwordHolder {
@@ -43,11 +46,13 @@ textarea {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     resize: vertical;
-    border: none;
+    border-color: #1d1d1d;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 4px;
     border-bottom: 20px;
-    background-color: white;
-    color: #000;
+    background-color: #242424;
+    color: rgb(136, 136, 136);
 }
 
 #wordListSelector {
@@ -55,18 +60,17 @@ textarea {
     align-items: center;
     justify-content: center;
     margin-bottom: 2%;
-    font-size: 14px;
 }
 
 #wordListSelector a:link, #wordListSelector a:visited, #wordListSelector a:active{
-    color: #000;
+    color: rgb(136, 136, 136);
 }
 
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 34px;
+    height: 15px;
 }
 
 .switch input { display:none; }
@@ -78,29 +82,30 @@ textarea {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #2196F3;
     -webkit-transition: .4s;
     transition: .4s;
+    background-color: #003333;
 }
 
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
+    height: 15px;
+    width: 15px;
+    left: 10px;
+    bottom: 0px;
+    background-color: #4a5157;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #003333;
 }
 
 input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
+    
 }
 
 input:checked + .slider:before {
@@ -119,26 +124,26 @@ input:checked + .slider:before {
 }
 
 #darkside {
+    display: none;
+}
+
+#light {
     display: inline;
     border-radius: 4px;
     border-color: #1d1d1d;
     border-width: 1px;
     border-style: solid;
-    background-color: white;
-    color: black;
+    background-color: #4a5157;
+    color: rgb(136, 136, 136);
     width: 15%;
     height: 30px;
     float: right;
     
 }
 
-#darkside:hover {
-    background-color: #242424;
-    color: white;   
-}
-
-#light {
-    display: none;
+#light:hover {
+    background-color: #003333;
+    color: #dddddd;
 }
 
 input::-webkit-outer-spin-button,

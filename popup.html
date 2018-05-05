@@ -4,29 +4,32 @@
 <head>
     <title>Diceware Passwords</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" id="default" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
 </head>
 
 <body>
     <div id="formHolder">
         <fieldset>
             <label>Number of words</label>
+            <button id="light">Light</button>
+            <button id="darkside">Dark</button>
             <input id="numberOfWords" type="number" value="8">
             <label>Separator</label>
             <input id="separatorValue" type="text" value=" ">
         </fieldset>
         <input type="button" id="newPassword" value="Give me my password!" />
         <div id="passwordHolder">
-            <textarea id="generatedPassword"></textarea>
+            <textarea id="generatedPassword" readonly="readonly"></textarea>
         </div>
         <div id="wordListSelector">
-            <span><a href="https://www.eff.org/dice">EFF word list</a>&nbsp;</span>
+            <span><a href="https://www.eff.org/dice" target="_blank">EFF word list</a>&nbsp;</span>
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
             </label>
-            <span>&nbsp;<a href="http://world.std.com/~reinhold/diceware.html">Diceware word list</a></span>
+            <span>&nbsp;<a href="http://world.std.com/~reinhold/diceware.html" target="_blank">Diceware word list</a></span>
         </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
