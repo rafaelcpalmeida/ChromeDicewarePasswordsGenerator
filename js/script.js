@@ -18,25 +18,3 @@ newPasswordButton.onclick = function() {
         generatedPasswordText.select();
     });
 };
-
-light.onclick = function() {
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = 'light';
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'css/style.css';
-    link.media = 'all';
-    head.appendChild(link);
-};
-
-darkside.onclick = function() {
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = 'darkside';
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'css/darkside.css';
-    link.media = 'all';
-    head.appendChild(link);
-};
